@@ -18,6 +18,29 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 	}
 }
 
-// exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
+	const pageTemplate = require.resolve(`./src/templates/index.js`)
+	const { data } = await graphql(
+		`
+			{
+				allMarkdownRemark {
+					nodes {
+						fields {
+							slug
+						}
+					}
+				}
+			}
+		`
+	)
 
-// }
+	data.allMarkdownRemark.nodes.map(({ fields: { slug } }) => {
+		actions.createPage({
+			path: slug,
+			component: pageTemplate,
+			context: {
+				slug,
+			},
+		})
+	})
+}
