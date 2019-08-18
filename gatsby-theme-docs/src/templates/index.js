@@ -13,8 +13,8 @@ const Page = ({ data }) => {
 	const [windowWidth, setWindowWidth] = React.useState(windowSizeTracker)
 
 	React.useEffect(() => {
-		setWindowWidth(window.innerWidth)
-	}, [window.innerWidth])
+		setWindowWidth(windowSizeTracker)
+	}, [windowSizeTracker])
 
 	const vw = (multiplier, ww) => (ww / 100) * multiplier
 	const tracking = (z, a = -0.0223, b = 0.185, c = -0.1745) =>
