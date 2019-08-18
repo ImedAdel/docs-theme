@@ -10,9 +10,9 @@ const Sidebar = ({ data }) => (
 			flexGrow: 1,
 			flexBasis: 256,
 			fontSize: `1.25vw`,
-			marginTop: `5vw`,
+			marginTop: `3vw`,
 			marginRight: `3vw`,
-			borderRight: `1px solid #efefef`
+			borderRight: `1px solid #efefef`,
 		}}
 	>
 		<nav>
@@ -20,6 +20,7 @@ const Sidebar = ({ data }) => (
 				to={`/`}
 				css={{
 					display: `block`,
+					fontSize: `1.5vw`,
 				}}
 			>
 				Docs
