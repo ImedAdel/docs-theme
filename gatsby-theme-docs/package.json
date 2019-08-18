@@ -1,6 +1,7 @@
 {
-	"name": "gatsby-theme-docs",
+	"name": "@imedadel/gatsby-theme-docs",
 	"version": "0.0.1",
+	"private": false,
 	"author": {
 		"name": "Imed Adel",
 		"email": "aadelimed@gmail.com",
