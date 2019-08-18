@@ -1,6 +1,8 @@
 ---
-title: Welcome
+title: Docs
 date: "17-08-2019"
 ---
 
-# Welcome
+# Docs
+
+This is the documentation for every WebTV project by Imed Adel.

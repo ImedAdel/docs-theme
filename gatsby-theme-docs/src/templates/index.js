@@ -32,10 +32,15 @@ const Page = ({ data }) => {
 				styles={css`
 					@import url('https://rsms.me/inter/inter.css');
 					:root {
-						font-size: 2vw !important;
+						font-size: 1.5vw !important;
 						font-family: Inter;
-						font-height: 1.64;
-						letter-spacing: ${tracking(vw(2, windowWidth))}em;
+						font-height: 1.48;
+						letter-spacing: ${tracking(vw(1.5, windowWidth))}em;
+					}
+					pre {
+						font-size: 1vw;
+						letter-spacing: ${tracking(vw(1, windowWidth))}em;
+						line-height: 1.2;
 					}
 					@supports (font-variation-settings: normal) {
 						:root {
