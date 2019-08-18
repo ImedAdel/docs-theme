@@ -2,6 +2,7 @@
 import { jsx, Global, css } from '@emotion/core'
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 import Sidebar from '../components/Sidebar'
 import Main from '../components/Main'
 
@@ -49,6 +50,9 @@ const Page = ({ data }) => {
 					}
 				`}
 			/>
+			<Helmet>
+				<title>{data.markdownRemark.frontmatter.title}</title>
+			</Helmet>
 			<Sidebar>Sidebar</Sidebar>
 			<Main>
 				<section
