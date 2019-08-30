@@ -6,8 +6,8 @@
 		"clean": "gatsby clean"
 	},
 	"dependencies": {
+		"@imedadel/gatsby-theme-docs": "*",
 		"gatsby": "^2.13.67",
-		"gatsby-theme-docs": "*",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0"
 	}

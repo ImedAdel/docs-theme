@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
 import React from 'react'
-import { StaticQuery, Link } from 'gatsby'
+import { StaticQuery, Link, graphql } from 'gatsby'
 
 const Sidebar = ({ data }) => (
 	<div
@@ -20,7 +20,11 @@ const Sidebar = ({ data }) => (
 				to={`/`}
 				css={{
 					display: `block`,
-					fontSize: `1.5vw`,
+					fontSize: `2vw`,
+					color: `#000`,
+					fontWeight: 700,
+					paddingBottom: `1.5vw`,
+					textDecoration: `none`,
 				}}
 			>
 				Docs
@@ -32,6 +36,8 @@ const Sidebar = ({ data }) => (
 							to={relativePath}
 							css={{
 								display: `block`,
+								color: `#000`,
+								textDecoration: `none`,
 							}}
 						>
 							{relativePath}

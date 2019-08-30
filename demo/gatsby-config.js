@@ -1,3 +1,3 @@
 module.exports = {
-	plugins: [`gatsby-theme-docs`],
+	plugins: [`@imedadel/gatsby-theme-docs`],
 }
