@@ -7,7 +7,7 @@
 	},
 	"dependencies": {
 		"@imedadel/gatsby-theme-docs": "*",
-		"gatsby": "2.13.67",
+		"gatsby": "2.15.0",
 		"react": "16.9.0",
 		"react-dom": "16.9.0"
 	}
